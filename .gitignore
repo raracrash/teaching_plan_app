@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+venv/
+.venv/
+
+# データベース（個人データが入るため除外）
+backend/data/
+*.db
+*.sqlite3
+
+# Node.js
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# テスト用一時ファイル
+*.tmp
+backend/test_output.docx

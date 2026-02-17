@@ -1,0 +1,8 @@
+{
+  "name": "teaching-plan-app",
+  "version": "1.0.0",
+  "description": "教員向け指導計画作成アプリ",
+  "dependencies": {
+    "docx": "^9.5.1"
+  }
+}
