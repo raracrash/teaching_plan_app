@@ -20,7 +20,9 @@ app = Flask(__name__,
     static_url_path='')
 CORS(app)
 
-GEMINI_API_KEY = os.environ.get('GEMINI_API_KEY', 'AIzaSyCGNv9ywUDI8eMpNvfI1jHUwJ8BsghxwQE')
+GEMINI_API_KEY = os.environ.get('GEMINI_API_KEY')
+if not GEMINI_API_KEY:
+    raise ValueError("環境変数 GEMINI_API_KEY が設定されていません")
 gemini_service_obj = GeminiService(GEMINI_API_KEY)
 db_manager_obj = DatabaseManager()
 
